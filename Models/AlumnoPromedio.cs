@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CoreEscuela.Entidades
+namespace Facturacion.Models
 {
 
     public class AlumnoPromedio

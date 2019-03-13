@@ -1,6 +1,6 @@
 using System;
 
-namespace CoreEscuela.Entidades
+namespace Facturacion.Models
 {
     public class Evaluaciones
     {

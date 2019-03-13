@@ -30,3 +30,6 @@
 /Users/anapaula/Documents/Repositories/Facturacion/obj/Debug/netcoreapp2.2/Facturacion.csproj.CopyComplete
 /Users/anapaula/Documents/Repositories/Facturacion/obj/Debug/netcoreapp2.2/Razor/Views/Escuela/Index.g.cshtml.cs
 /Users/anapaula/Documents/Repositories/Facturacion/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Simple.g.cshtml.cs
+/Users/anapaula/Documents/Repositories/Facturacion/obj/Debug/netcoreapp2.2/Razor/Views/Asignatura/Index.g.cshtml.cs
+/Users/anapaula/Documents/Repositories/Facturacion/obj/Debug/netcoreapp2.2/Razor/Views/Shared/AsignaturaSimple.g.cshtml.cs
+/Users/anapaula/Documents/Repositories/Facturacion/obj/Debug/netcoreapp2.2/Razor/Views/Asignatura/MultiAsignatura.g.cshtml.cs

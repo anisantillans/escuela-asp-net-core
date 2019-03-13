@@ -1,4 +1,4 @@
-namespace CoreEscuela.Entidades
+namespace Facturacion.Models
 {
     public enum TiposEscuela
     {

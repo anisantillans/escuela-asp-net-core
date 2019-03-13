@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using CoreEscuela.Util;
 
-namespace CoreEscuela.Entidades
+
+namespace Facturacion.Models
 {
-    public class Escuela:ObjetoEscuelaBase, ILugar
+    public class Escuela:ObjetoEscuelaBase
     {
         public int AñoDeCreación { get; set; }
 
@@ -27,24 +27,14 @@ namespace CoreEscuela.Entidades
             Ciudad = ciudad;
         }
 
+        public Escuela (){
+            
+        }
+
         public override string ToString()
         {
             return $"Nombre: \"{Nombre}\", Tipo: {TipoEscuela} {System.Environment.NewLine} Pais: {Pais}, Ciudad:{Ciudad}";
         }
 
-        public void LimpiarLugar()
-        {
-             
-            Printer.DrawLine();
-            Console.WriteLine("Limpiando Escuela..");
-            
-            foreach (var curso in Cursos)
-            {
-                curso.LimpiarLugar();
-            }
-            
-            Printer.WriteTitle($"Escuela {Nombre} Limpia");
-            Printer.Beep(1000, cantidad:3);
-        }
     }
 }
