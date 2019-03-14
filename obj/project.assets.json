@@ -12077,11 +12077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anapaula/Documents/Repositories/Facturacion/Facturacion.csproj",
+      "projectUniqueName": "/Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/Facturacion.csproj",
       "projectName": "Facturacion",
-      "projectPath": "/Users/anapaula/Documents/Repositories/Facturacion/Facturacion.csproj",
+      "projectPath": "/Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/Facturacion.csproj",
       "packagesPath": "/Users/anapaula/.nuget/packages/",
-      "outputPath": "/Users/anapaula/Documents/Repositories/Facturacion/obj/",
+      "outputPath": "/Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

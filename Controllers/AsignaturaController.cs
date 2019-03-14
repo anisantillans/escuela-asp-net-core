@@ -37,8 +37,8 @@ namespace Facturacion.Controllers
             //Bolsa de cosas dinámica
             ViewBag.CosaDinamica = "La monja";
             ViewBag.Fecha = DateTime.Now;
-            //return View("MultiAsignatura",listaAsignaturas);
-            return View(listaAsignaturas);
+            return View("MultiAsignatura",listaAsignaturas);
+            //return View(listaAsignaturas);
         }
     }
 }
