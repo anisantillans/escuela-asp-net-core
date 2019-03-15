@@ -34,6 +34,7 @@ namespace Facturacion
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //CREAMOS UNA ESCUELA CONTEXT
             services.AddDbContext<EscuelaContext>(
                 options => options.UseInMemoryDatabase(databaseName: "testDB")
             );

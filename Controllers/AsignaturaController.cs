@@ -10,7 +10,7 @@ namespace Facturacion.Controllers
         public IActionResult Index() {
             var asignatura = new Asignatura{
                 Nombre="Programación",
-                UniqueId = Guid.NewGuid().ToString()
+                Id = Guid.NewGuid().ToString()
             };
             return View(asignatura);
         }
@@ -18,19 +18,19 @@ namespace Facturacion.Controllers
             //si no especificamos el nombre de la vista, entiende que es en nombre del método
            var listaAsignaturas = new System.Collections.Generic.List<Asignatura>(){
                             new Asignatura{Nombre="Matemáticas",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                             } ,
                             new Asignatura{Nombre="Educación Física",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                             },
                             new Asignatura{Nombre="Castellano",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                             },
                             new Asignatura{Nombre="Ciencias Naturales",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                             },
                             new Asignatura{Nombre="Programación",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                             }
             };
             

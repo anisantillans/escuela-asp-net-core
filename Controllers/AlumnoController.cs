@@ -11,7 +11,7 @@ namespace Facturacion.Controllers
         public IActionResult Index() {
             var asignatura = new Asignatura{
                 Nombre="Pepe Perez",
-                UniqueId = Guid.NewGuid().ToString()
+                Id = Guid.NewGuid().ToString()
             };
             return View(asignatura);
         }
@@ -38,10 +38,10 @@ namespace Facturacion.Controllers
                                from a1 in apellido1
                                select new Alumno { 
                                    Nombre = $"{n1} {n2} {a1}" ,
-                                   UniqueId = Guid.NewGuid().ToString()
+                                   Id = Guid.NewGuid().ToString()
                                    };
 
-            return listaAlumnos.OrderBy((al) => al.UniqueId).ToList();
+            return listaAlumnos.OrderBy((al) => al.Id).ToList();
         }
     }
 }
