@@ -70,3 +70,4 @@
 /Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/obj/Debug/netcoreapp2.2/Razor/Views/Alumno/Index.g.cshtml.cs
 /Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/obj/Debug/netcoreapp2.2/Razor/Views/Alumno/MultiAlumno.g.cshtml.cs
 /Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/obj/Debug/netcoreapp2.2/Razor/Views/Asignatura/MultiAsignatura.g.cshtml.cs
+/Users/anapaula/Documents/Repositories/Escuela_asp_net_core/escuela-asp-net-core/obj/Debug/netcoreapp2.2/Razor/Views/Shared/ListaObjetoEscuela.g.cshtml.cs
