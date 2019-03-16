@@ -3,45 +3,28 @@ using System.Linq;
 using Facturacion.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using escuela_asp_net_core.Models;
 
 namespace Facturacion.Controllers
 {
     public class AlumnoController : Controller
     {
         public IActionResult Index() {
-            var asignatura = new Asignatura{
-                Nombre="Pepe Perez",
-                Id = Guid.NewGuid().ToString()
-            };
-            return View(asignatura);
+            return View(_context.Alumnos.FirstOrDefault());
         }
         public IActionResult MultiAlumno() {
-            //si no especificamos el nombre de la vista, entiende que es en nombre del método
-           var listaAlumnos = GenerarAlumnosAlAzar();
-                        
+            //si no especificamos el nombre de la vista, entiende que es en nombre del método       
             
             //Bolsa de cosas dinámica
             ViewBag.CosaDinamica = "La monja";
             ViewBag.Fecha = DateTime.Now;
             //return View("MultiAsignatura",listaAsignaturas);
-            return View("MultiAlumno",listaAlumnos);
+            return View("MultiAlumno", _context.Alumnos);
         }
 
-        private List<Alumno> GenerarAlumnosAlAzar()
-        {
-            string[] nombre1 = { "Alba", "Felipa", "Eusebio", "Farid", "Donald", "Alvaro", "Nicolás" };
-            string[] apellido1 = { "Ruiz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera" };
-            string[] nombre2 = { "Freddy", "Anabel", "Rick", "Murty", "Silvana", "Diomedes", "Nicomedes", "Teodoro" };
-
-            var listaAlumnos = from n1 in nombre1
-                               from n2 in nombre2
-                               from a1 in apellido1
-                               select new Alumno { 
-                                   Nombre = $"{n1} {n2} {a1}" ,
-                                   Id = Guid.NewGuid().ToString()
-                                   };
-
-            return listaAlumnos.OrderBy((al) => al.Id).ToList();
+        public EscuelaContext _context;
+        public AlumnoController (EscuelaContext context){
+            _context = context;
         }
     }
 }

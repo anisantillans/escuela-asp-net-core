@@ -8,7 +8,7 @@ namespace Facturacion.Controllers
 {
     public class EscuelaController : Controller
     {
-        public EscuelaContext _context;
+       
         public IActionResult Index() {
             //si no especificamos el nombre de la vista, entiende que es en nombre del método
 
@@ -18,6 +18,7 @@ namespace Facturacion.Controllers
             return View(escuela);
         }
 
+        public EscuelaContext _context;
         public EscuelaController (EscuelaContext context){
             _context = context;
         }
